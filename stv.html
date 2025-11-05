@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="stv.css" />
+</head>
+<body>
+  <div class="controls">
+    <input type="text" id="userArray" placeholder="Enter numbers comma-separated, e.g. 5,2,9,1">
+
+    <button id="generateArray">Generate New Array</button>
+    <button id="resetArray">Reset</button>
+
+    <label for="arraySize">Array Size:</label>
+    <input type="range" id="arraySize" min="5" max="50" value="20">
+    <span id="arraySizeValue">20</span>
+
+    <select id="algorithm" title="Choose algorithm">
+      <option value="bubble">Bubble Sort</option>
+      <option value="selection">Selection Sort</option>
+      <option value="insertion">Insertion Sort</option>
+      <option value="merge">Merge Sort</option>
+      <option value="quick">Quick Sort</option>
+    </select>
+
+    <label for="speed">Speed:</label>
+    <input type="range" id="speed" min="1" max="50" value="25">
+    <span id="speedValue">25</span>
+
+    <button id="start">Start</button>
+    <button id="pause">Pause</button>
+  </div>
+
+  <div id="barsContainer"></div>
+
+  <script src="stv.js"></script>
+</body>
+</html>
